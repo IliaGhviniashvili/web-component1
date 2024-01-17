@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="MultiSelectTag.js"></script>
+    <script defer src="ExpandableList.js"></script>
+    <title>Document</title>
+    <style>
+      h3 {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Other</h3>
+    <multi-select-tag  checked
+      >Todo 1
+      <span slot="description">Small text</span>
+    </multi-select-tag>
+    <multi-select-tag>Todo 2</multi-select-tag>
+    <multi-select-tag>Todo 3</multi-select-tag>
+
+    <ul is="expandable-list" data-expanded>
+        <li>Hokkaido</li>
+        <li>Honsiu</li>
+        <ul is="expandable-list" data-expanded>
+            <li>Shikoku</li>
+            <li>Kiusiu</li>
+        </ul>
+    </ul>
+    
+  </body>
+</html>
